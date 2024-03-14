@@ -1,0 +1,32 @@
+<header>
+  <div class='header-contents'>
+    <div class='logo'>
+      <%= link_to 'Soliciting of Agents', root_path %>
+    </div>
+    <div class='nav'>
+      <ul class='nav-lists'>
+        <li><%= link_to 'ログイン', "#", class: "nav-list" %></li>
+        <li><%= link_to '新規登録', "#", class: "nav-list" %></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class='main'>
+  <div class="image-container">
+    <%= image_tag "Beta Key Art_VALORANT.jpg", class:"image" %>
+    <div class='caption'>共に戦う仲間を見つけよう！</div>
+    <div class='container-btn'>
+      <div class='sign-in-btn'>
+        <%= link_to 'ログイン', "#" %>
+      </div>
+      <div class='sign-up-btn'>
+        <%= link_to '新規登録', "#" %>
+      </div>
+    </div>
+  </div>
+
+  <div class='post-contents'>
+    <h2 class='title'>募集一覧</h2>
+  </div>
+</div>
