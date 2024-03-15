@@ -1,0 +1,28 @@
+.header-contents {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-family: "Anta", sans-serif;
+  font-size: 30px;
+}
+
+.nav-lists {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+  font-weight: bold;
+}
