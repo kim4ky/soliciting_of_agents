@@ -5,8 +5,8 @@
     </div>
     <div class='nav'>
       <ul class='nav-lists'>
-        <li><%= link_to 'ログイン', "#", class: "nav-list" %></li>
-        <li><%= link_to '新規登録', "#", class: "nav-list" %></li>
+        <li><%= link_to 'ログイン', "/users/sign_in", class: "nav-list" %></li>
+        <li><%= link_to '新規登録', "/users/sign_up", class: "nav-list" %></li>
       </ul>
     </div>
   </div>
@@ -17,10 +17,10 @@
     <%= image_tag "Beta Key Art_VALORANT.jpg", class:"image" %>
     <div class='caption'>共に戦う仲間を見つけよう！</div>
     <div class='container-btn'>
-      <%= link_to "#", class: 'sign-in-btn' do %>
+      <%= link_to "/users/sign_in", class: 'sign-in-btn' do %>
         <span class='btn-text'>ログイン</span>
       <% end %>
-      <%= link_to "#", class: 'sign-up-btn' do %>
+      <%= link_to "/users/sign_up", class: 'sign-up-btn' do %>
         <span class='btn-text'>新規登録</span>
       <% end %>
     </div>
