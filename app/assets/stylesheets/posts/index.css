@@ -28,8 +28,8 @@
 }
 
 .main {
-  background-color: rgb(239, 235, 228);
-  height: calc(100vh - 80px);
+  background-color: rgb(235,232,225);
+  height: calc(100% - 80px);
   width: 100vw;
 }
 
@@ -51,6 +51,7 @@
   color: white;
   font-size: 45px;
   font-weight: bold;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
 }
 
 .container-btn {
@@ -64,28 +65,48 @@
 .sign-in-btn {
   height: 50px;
   width: 200px;
-  background-color: rgb(255, 84, 84);
+  background-color: rgb(254, 70, 85);
   line-height: 50px;
   text-align: center;
   margin-right: 50px;
-  border: 1px solid white;
+  border: 1px solid rgb(189,188,182);
+  text-decoration: none;
 }
 
-.sign-in-btn a {
-  text-decoration: none;
+.btn-text {
   color: white;
 }
 
 .sign-up-btn {
   height: 50px;
   width: 200px;
-  background-color: rgb(255, 84, 84);
+  background-color: rgb(254, 70, 85);
   line-height: 50px;
   text-align: center;
-  border: 1px solid white;
+  border: 1px solid rgb(189,188,182);
+  text-decoration: none;
 }
 
-.sign-up-btn a {
-  text-decoration: none;
-  color: white;
+.post-contents {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.post-contents>.title {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.post-contents>.title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: rgb(254, 70, 85);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
