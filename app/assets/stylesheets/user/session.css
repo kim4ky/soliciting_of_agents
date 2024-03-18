@@ -1,6 +1,15 @@
-.session-form-wrap {
-  width: 40%;
-  height: 500px;
-  background-color: white;
-  margin: auto 0;
+.session {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.session-btn {
+  width: 100%;
+  background: rgb(254, 70, 85);
+  border: 1px solid rgb(254, 70, 85);
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 50px;
 }
