@@ -6,4 +6,7 @@ class GameMode < ActiveHash::Base
     { id: 4, name: 'チームデスマッチ' },
     { id: 5, name: 'その他' },
   ]
+
+  include ActiveHash::Associations
+  has_many :posts
 end
