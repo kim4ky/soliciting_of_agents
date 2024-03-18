@@ -5,8 +5,13 @@
     </div>
     <div class='nav'>
       <ul class='nav-lists'>
-        <li><%= link_to 'ログイン', "/users/sign_in", class: "nav-list" %></li>
-        <li><%= link_to '新規登録', "/users/sign_up", class: "nav-list" %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to 'マイページ', "#", class: "nav-list" %></li>
+          <li><%= link_to 'ログアウト', "/users/sign_out", data: {turbo_method: :delete}, class: "nav-list" %></li>
+        <% else %>
+          <li><%= link_to 'ログイン', "/users/sign_in", class: "nav-list" %></li>
+          <li><%= link_to '新規登録', "/users/sign_up", class: "nav-list" %></li>
+        <% end %>
       </ul>
     </div>
   </div>

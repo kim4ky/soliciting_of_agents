@@ -5,11 +5,13 @@
     <%= image_tag "Beta Key Art_VALORANT.jpg", class:"image" %>
     <div class='caption'>共に戦う仲間を見つけよう！</div>
     <div class='container-btn'>
-      <%= link_to "/users/sign_in", class: 'sign-in-btn' do %>
-        <span class='btn-text'>ログイン</span>
-      <% end %>
-      <%= link_to "/users/sign_up", class: 'sign-up-btn' do %>
-        <span class='btn-text'>新規登録</span>
+      <% unless current_user %>
+        <%= link_to "/users/sign_in", class: 'sign-in-btn' do %>
+          <span class='btn-text'>ログイン</span>
+        <% end %>
+        <%= link_to "/users/sign_up", class: 'sign-up-btn' do %>
+          <span class='btn-text'>新規登録</span>
+        <% end %>
       <% end %>
     </div>
   </div>
