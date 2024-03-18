@@ -26,7 +26,7 @@
   position: relative;
 }
 
-.form-header>.form-header-text::after {
+.form-header-text::after {
   content: '';
   width: 80px;
   height: 4px;
