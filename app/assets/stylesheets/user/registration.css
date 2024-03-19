@@ -1,8 +1,6 @@
-.registration-main {
+.form-main {
   width: 100%;
-  min-width: 800px;
   height: 100%;
-  
   display: flex;
   justify-content: center;
 }
@@ -20,7 +18,7 @@
 
 .form-header-text {
   text-align: center;
-  font-size: 3.5vh;
+  font-size: 33px;
   font-weight: bold;
   margin-bottom: 5vh;
   position: relative;
