@@ -1,0 +1,30 @@
+<%= render "shared/header" %>
+
+<%= form_with model: @post, class: 'form-main', local: true do |f| %>
+<div class='post-form'>
+  <div class='form-header'>
+    <h2 class='form-header-text'>募集投稿</h2>
+  </div>
+  <%= render "shared/error_messages", model: f.object %>
+
+  <div class="game-mode">
+    <div class='form-text-wrap'>
+      <label class="form-text">ゲームモード</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:game_mode_id, GameMode.all, :id, :name, {}, {class:"select-box"}) %>
+  </div>
+
+  <div class="content-form">
+    <div class='form-text-wrap'>
+      <label class="form-text">投稿内容</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :post, class:"content-text", placeholder:"募集内容の詳細を記入してください" %>
+  </div>
+
+  <div class="post">
+    <%= f.submit "投稿する",class:"post-btn" %>
+  </div>
+</div>
+<% end %>
