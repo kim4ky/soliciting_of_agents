@@ -28,7 +28,9 @@
         <div class='post-list'>
           <div class='post-top'>
             <div class='post-game-mode'>
-              <a href="#"><%= post.game_mode.name %></a>
+              <%= link_to post_path(post.id), class:"game-mode-text" do %>
+                <%= post.game_mode.name %>
+              <% end %>
             </div>
             <div class='post-user'>
               <a href="#"><%= post.user[:nickname] %></a>
@@ -36,7 +38,9 @@
           </div>
           <div class='post-bottom'>
             <div class='post-content'>
-              <a href="#"><%= post.content %></a>
+              <%= link_to post_path(post.id), class:"post-content-text" do %>
+                <%= post.content %>
+              <% end %>
             </div>
             <div class='post-datetime'>
               投稿日：<%= post.created_at.strftime("%Y/%m/%d %H:%M") %>

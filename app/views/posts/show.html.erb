@@ -1,0 +1,37 @@
+<%= render "shared/header" %>
+
+<div class="post-show">
+  <div class='form-header'>
+    <h2 class='form-header-text'>投稿内容の詳細</h2>
+  </div>
+
+  <div class="item-box">
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">ニックネーム</th>
+          <td class="detail-value"><%= @post.user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">ゲームモード</th>
+          <td class="detail-value"><%= @post.game_mode.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">詳細</th>
+          <td class="detail-value"><%= @post.content %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">投稿日時</th>
+          <td class="detail-value"><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <% if user_signed_in? %>
+      <% if current_user == @post.user %>
+        <%= link_to "編集", "#", class: "post-edit" %>
+        <%= link_to "削除", "#", class:"post-destroy" %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
