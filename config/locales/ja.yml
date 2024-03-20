@@ -6,4 +6,5 @@ ja:
       post:
         game_mode_id: ゲームモード
         content: 投稿内容
+        user: ユーザー
 
