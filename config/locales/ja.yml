@@ -3,4 +3,7 @@ ja:
     attributes:
       user:
         nickname: ニックネーム
+      post:
+        game_mode_id: ゲームモード
+        content: 投稿内容
 
