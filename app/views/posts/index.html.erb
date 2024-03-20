@@ -26,15 +26,15 @@
     <div class='post-lists'>
       <% @posts.each do |post| %>
         <div class='post-list'>
-          <div class='post-left'>
-            <div class='post-user'>
-              <%= post.user[:nickname] %>
-            </div>
-          </div>
-          <div class='post-right'>
+          <div class='post-top'>
             <div class='post-game-mode'>
               <a href="#"><%= post.game_mode.name %></a>
             </div>
+            <div class='post-user'>
+              <a href="#"><%= post.user[:nickname] %></a>
+            </div>
+          </div>
+          <div class='post-bottom'>
             <div class='post-content'>
               <a href="#"><%= post.content %></a>
             </div>
