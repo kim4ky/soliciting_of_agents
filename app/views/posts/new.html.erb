@@ -20,7 +20,7 @@
       <label class="form-text">投稿内容</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.text_area :content, class:"content-text", placeholder:"募集内容の詳細を記入してください" %>
+    <%= f.text_area :content, class:"content-text", placeholder:"募集内容の詳細を記入してください （500文字まで）", maxlength:"500" %>
   </div>
 
   <div class="post">
