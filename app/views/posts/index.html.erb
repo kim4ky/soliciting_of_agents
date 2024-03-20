@@ -6,10 +6,10 @@
     <div class='caption'>共に戦う仲間を見つけよう！</div>
     <div class='container-btn'>
       <% unless current_user %>
-        <%= link_to "/users/sign_in", class: 'sign-in-btn' do %>
+        <%= link_to "/users/sign_in", class:"sign-in-btn" do %>
           <span class='btn-text'>ログイン</span>
         <% end %>
-        <%= link_to "/users/sign_up", class: 'sign-up-btn' do %>
+        <%= link_to "/users/sign_up", class:"sign-up-btn" do %>
           <span class='btn-text'>新規登録</span>
         <% end %>
       <% end %>
@@ -18,6 +18,32 @@
 
   <div class='post-contents'>
     <h1 class='title'>募集一覧</h1>
-    <%= link_to "投稿する", new_post_path, class:"post" %>
+    <div class='new-solicitation'>
+      <%= link_to new_post_path, class:"solicitation-btn" do %>
+        <span class='btn-text'>新規募集する</span>
+      <% end %>
+    </div>
+    <div class='post-lists'>
+      <% @posts.each do |post| %>
+        <div class='post-list'>
+          <div class='post-left'>
+            <div class='post-user'>
+              <%= post.user[:nickname] %>
+            </div>
+          </div>
+          <div class='post-right'>
+            <div class='post-game-mode'>
+              <a href="#"><%= post.game_mode.name %></a>
+            </div>
+            <div class='post-content'>
+              <a href="#"><%= post.content %></a>
+            </div>
+            <div class='post-datetime'>
+              投稿日：<%= post.created_at.strftime("%Y/%m/%d %H:%M") %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
