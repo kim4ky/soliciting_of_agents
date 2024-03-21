@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :edit]
-  before_action :set_post, only: [:show, :edit, :update]
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   def index
     @posts = Post.order("created_at DESC")
@@ -34,6 +34,11 @@ class PostsController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @post.destroy if current_user == @post.user
+    redirect_to root_path
   end
 
   private
