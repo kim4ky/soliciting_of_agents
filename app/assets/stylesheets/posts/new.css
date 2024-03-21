@@ -29,15 +29,25 @@
 .post {
   width: 50%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .post-btn {
   width: 100%;
-  background: rgb(254, 70, 85);
+  background-color: rgb(254, 70, 85);
   border: 1px solid rgb(254, 70, 85);
   color: #fff;
   line-height: 48px;
   font-size: 14px;
   cursor: pointer;
-  margin-top: 50px;
+  margin: 50px 0;
+}
+
+.back-btn {
+  background-color: grey;
+  border: 1px solid gray;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 35%;
+  text-decoration: none;
 }
