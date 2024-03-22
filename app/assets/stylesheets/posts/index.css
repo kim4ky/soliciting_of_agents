@@ -35,12 +35,26 @@
 .sign-in-btn {
   height: 50px;
   width: 200px;
-  background-color: rgb(254, 70, 85);
   line-height: 50px;
   text-align: center;
   margin-right: 50px;
   border: 1px solid rgb(189,188,182);
   text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #000 0%,
+    #000 50%,
+    rgb(254, 70, 85) 50%,
+    rgb(254, 70, 85) 100%
+  );
+  transition: background-position ease 0.4s;
+}
+
+.sign-in-btn:hover {
+  background-position: 0 0;
 }
 
 .btn-text {
@@ -55,6 +69,21 @@
   text-align: center;
   border: 1px solid rgb(189,188,182);
   text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #000 0%,
+    #000 50%,
+    rgb(254, 70, 85) 50%,
+    rgb(254, 70, 85) 100%
+  );
+  transition: background-position ease 0.4s;
+}
+
+.sign-up-btn:hover {
+  background-position: 0 0;
 }
 
 .post-contents {
@@ -96,7 +125,7 @@
   background-color: rgb(254, 70, 85);
   text-align: center;
   border-radius: 5px;
-  border: 1px solid rgb(189,188,182);
+  border: 1px solid rgb(254, 70, 85);
   text-decoration: none;
   padding: 12px 20px;
 }
