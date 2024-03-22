@@ -33,7 +33,7 @@
   background-color: rgb(254, 70, 85);
   font-size: 15px;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   margin: 20px 10px 0 0;
   padding: 15px 20px;
   border-radius: 5px;
@@ -44,8 +44,54 @@
   background-color: gray;
   font-size: 15px;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   margin: 20px 0;
   padding: 15px 20px;
   border-radius: 5px;
+}
+
+.container {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  width: 60%;
+  margin: 80px auto;
+  padding: 5px 20px 30px;
+}
+
+.comments {
+  margin: 0 20px 50px;
+}
+
+.comment-name {
+  text-decoration: none;
+}
+
+.comment-destroy {
+  font-size: 12px;
+  background-color: gray;
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 5px;
+  border-radius: 2px;
+  margin-left: 15px;
+}
+
+.comment-text {
+  width: 100%;
+  height: 70px;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-post-btn {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(254, 70, 85);
+  border: 1px solid rgb(254, 70, 85);
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 15px;
+  cursor: pointer;
 }
