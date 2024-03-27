@@ -29,8 +29,8 @@
 
     <% if user_signed_in? %>
       <% if current_user == @post.user %>
-        <%= link_to "編集", edit_post_path, class: "post-edit" %>
-        <%= link_to "削除", post_path, data: {turbo_confirm: "削除してもよろしいですか？", turbo_method: :delete}, class:"post-destroy" %>
+        <%= link_to "編集", edit_post_path, class: "post-edit", id:"button" %>
+        <%= link_to "削除", post_path, data: {turbo_confirm: "削除してもよろしいですか？", turbo_method: :delete}, class:"post-destroy", id:"button" %>
       <% end %>
     <% end %>
   </div>
@@ -43,7 +43,7 @@
           <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}", class:"comment-name" %>：</strong>
           <%= comment.text %>
           <% if user_signed_in? && current_user.id == comment.user_id %>
-            <%= link_to "削除", post_comment_path(@post, comment), data: {turbo_confirm: "削除してもよろしいですか？", turbo_method: :delete}, class:"comment-destroy" %>
+            <%= link_to "削除", post_comment_path(@post, comment), data: {turbo_confirm: "削除してもよろしいですか？", turbo_method: :delete}, class:"comment-destroy", id:"button" %>
           <% end %>
         </p>
       <% end %>
@@ -51,7 +51,7 @@
     <% if user_signed_in? %>
       <%= form_with(model: [@post, @comment], local: true) do |form| %>
         <%= form.text_area :text, class:"comment-text", placeholder: "コメントする" %>
-        <%= form.submit "投稿する", class:"comment-post-btn" %>
+        <%= form.submit "投稿する", class:"comment-post-btn", id:"button" %>
       <% end %>
     <% else %>
       <strong>
