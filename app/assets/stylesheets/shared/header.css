@@ -12,8 +12,15 @@
   text-decoration: none;
   color: white;
   font-family: "Anta", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
 }
+
+@media only screen and (max-width: 600px) {
+  .logo a {
+    font-size: 20px;
+  }
+}
+
 
 .nav-lists {
   display: flex;
@@ -25,7 +32,15 @@
   color: white;
   padding:20px 30px;
   font-weight: bold;
+  font-size: 17px;
   position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-list {
+    font-size: 15px;
+    padding:20px 15px;
+  }
 }
 
 .nav-list::after {

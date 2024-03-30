@@ -6,7 +6,7 @@
 }
 
 .form-wrap {
-  width: 60%;
+  width: 100%;
   padding-bottom: 70px;
 }
 
@@ -37,7 +37,8 @@
 
 
 .form-group {
-  width: 60%;
+  width: 90%;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -73,8 +74,9 @@
 }
 
 .registration {
-  width: 60%;
-  margin: 0 auto;
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto 0;
 }
 
 .registration-btn {
@@ -85,7 +87,6 @@
   line-height: 48px;
   font-size: 14px;
   cursor: pointer;
-  margin-top: 50px;
 }
 
 .indispensable {
@@ -99,6 +100,8 @@
 }
 
 .form-bottom {
-  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
