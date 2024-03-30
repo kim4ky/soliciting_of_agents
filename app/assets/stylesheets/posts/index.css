@@ -16,8 +16,10 @@
 .caption {
   position: absolute;
   top: 200px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
   color: white;
   font-size: 45px;
   font-weight: bold;
@@ -26,10 +28,12 @@
 
 .container-btn {
   display: flex;
+  justify-content: center;
   position: absolute;
   top: 350px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 20px;
 }
 
 .sign-in-btn {
@@ -96,7 +100,7 @@
   text-align: center;
   font-size: 33px;
   font-weight: bold;
-  margin-bottom: 5vh;
+  margin-bottom: 70px;
   position: relative;
 }
 
@@ -112,9 +116,9 @@
 }
 
 .new-solicitation {
-  width: 50%;
+  width: 90%;
+  max-width: 900px;
   height: 50px;
-  min-width: 500px;
   margin: 0 auto;
   text-align: left;
 }
@@ -132,8 +136,8 @@
 
 .post-list {
   background-color: #fff;
-  width: 50%;
-  min-width: 500px;
+  width: 90%;
+  max-width: 900px;
   border-radius: 5px;
   box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.2);
   margin: 20px auto 0;
