@@ -1,9 +1,10 @@
-.item-show {
-  width: 100vw;
+.post-show {
+  width: 100%;
 }
 
-.item-box {
-  width: 60%;
+.post-box {
+  width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -53,7 +54,8 @@
 .container {
   background-color: #fff;
   border: 1px solid #dedede;
-  width: 60%;
+  width: 90%;
+  max-width: 1000px;
   margin: 80px auto;
   padding: 5px 20px 30px;
 }
